@@ -19,7 +19,7 @@ app.get('/',
         //res.sendFile(__dirname + 'index.html');
         //res.write('test');
     });
-app.listen(3000, function () {
+app.listen(process.env.PORT||3000, function () {
     console.log('listening');
 });
 //http.createServer(app.handleRequest).listen(port);
